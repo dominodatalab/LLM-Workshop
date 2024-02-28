@@ -1,10 +1,13 @@
 # Admin Set Up
 
+**I haven't tested this list specifically, please do so and update - Bryan**
+
 You need to go through the Plaform Configuration steps below and update your fork of the main readme.
 **YOU SHOULD NOT NEED TO CHANGE ANY CODE IN THE TEMPLATE**
 
 ## TODO:
 Update for 5.10
+
 Get added as an official template?
 
 ## Domino Platform Configuration
