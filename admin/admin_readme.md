@@ -1,18 +1,11 @@
 # Admin Set Up
 
+You need to go through the Plaform Configuration steps below and update your fork of the main readme.
+**YOU SHOULD NOT NEED TO CHANGE ANY CODE IN THE TEMPLATE**
 
-## Readme Changes
-in the readme file change the following values:
-- Line 17 - add Domino URL
-- Change the image on line 441, working_app.png, to a screenshot of the application
-- Change line 352 and the image on 356 to reflect the 
-
-Find-Replace the following:
-- **Customer_Name** - e.g. *Acme Insurance*
-- **Customer_Name_NoSpace** - e.g. *acme_insurance*
-- **Use_Case** - a short form title of the use case e.g. *Car Policy*
-- **Example_Question** - e.g. *What is my excess?*
-
+## TODO:
+Update for 5.10
+Get added as an official template?
 
 ## Domino Platform Configuration
 
@@ -45,4 +38,16 @@ Add the following instructions:
 RUN pip install qdrant_client streamlit_chat pypdf
 ```
 
-**NOTE: this can get
+**NOTE: this image can get updated/replaced by the AI Hub updates so make sure you check and repeat the above steps if it does**
+
+## Readme Changes
+in the readme file change the following values:
+- Line 17 - add Domino URL
+- Change the image on line 441, working_app.png, to a screenshot of the application
+- Change line 352 and the image on 356 to reflect the 
+
+Find-Replace the following:
+- **Customer_Name** - e.g. *Acme Insurance*
+- **Customer_Name_NoSpace** - e.g. *acme_insurance*
+- **Use_Case** - a short form title of the use case e.g. *Car Policy*
+- **Example_Question** - e.g. *What is my excess?*
