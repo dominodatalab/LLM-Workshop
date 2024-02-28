@@ -44,3 +44,5 @@ Add the following instructions:
 ```
 RUN pip install qdrant_client streamlit_chat pypdf
 ```
+
+**NOTE: this can get
