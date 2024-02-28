@@ -1,6 +1,6 @@
-# Domino Hands-On Retrieval-Augmented Generation Workshop
+# Customer_Name Hands-On Retrieval-Augmented Generation Workshop
 
-#### In this workshop you will tailor a RAG Application to your own use case -
+#### In this workshop you will tailor a RAG Application to your Use_Case use case -
 
 * Leverage Domino's AI Hub templates
 * Utilise Domino to self-service GPUs
@@ -10,6 +10,11 @@
 * Deploy model to a containerized API endpoint
 * Deploy a web-app frontend for end-user consumption
 
+# Prerequisites
+
+1. GitHub Personal Account. If you do not have a personal GitHub account, you must create one. You can do that here: http://github.com. Ensure to use your private email address.
+2. GitHub PAT. Once you have your GitHub account, you can create your PAT here: https://github.com/settings/tokens. Since this is temporary, give it access to everything if you are unsure.
+3. Navigate to your Domino deployment URL and sign up.
 
 # Section 1: Project Set Up
 First we need to start a new project based on a Domino AI Hub template. This involves configuring our Git credentals in Domino and adding our external data source, in this case S3. Then we will start a development environment using GPU infrastructure.
@@ -89,7 +94,7 @@ To do this click on **Data** on the left hand menu and then **Add Data Source**:
 <img src = images/data_source1.png width="800">
 </p>
 
-From here we can see a list of the data sources we have access to. Click on the **Nissan-Workshop** S3 connector. 
+From here we can see a list of the data sources we have access to. Click on the **Customer_Name-Workshop** S3 connector. 
 
 To simplify things in this workshop the data sources have been added with service accounts, but in many organisations you would have to put in your individiual credentials to connect to the data source.
 
@@ -145,13 +150,13 @@ Double click on **Llama_Qdrant_RAG.ipynb** notebook in the left panel:
 
 Run the first cell to load all the library dependencies by pressing *Shift + Enter*. 
 
-This template uses an out of the box document from Domino - but want to use the Nissan documents from our S3 bucket. We need to add a new cell to the Notebook, click the **+** in the top left:
+This template uses an out of the box document from Domino - but want to use the Use_Case documents from our S3 bucket. We need to add a new cell to the Notebook, click the **+** in the top left:
 
 <p align="center">
 <img src = images/notebook2.png width="800">
 </p>
 
-To connect to the S3 bucket we can get the connection details from the Domino UI. Click on **Data** in the menu on the left. Then the **Copy** symbol next to the *Nexus-Workshop* and then **Python**:
+To connect to the S3 bucket we can get the connection details from the Domino UI. Click on **Data** in the menu on the left. Then the **Copy** symbol next to the *ddl-rag-workshop* and then **Python**:
 
 <p align="center">
 <img src = images/notebook_datasource1.png width="800">
@@ -196,10 +201,10 @@ In order to use these document pages we also need to download the appropriate em
 <img src = images/notebook_embeddings.png width="800">
 </p>
 
-Finally we want to load our document pages processing them with the embeddings and storing them in the Qdrant Vector Database. We want to change the name of the collection. Change **mlops** to **nissan**, then run the cell. **Note:** This will take several minutes to populate the database.
+Finally we want to load our document pages processing them with the embeddings and storing them in the Qdrant Vector Database. We want to change the name of the collection. Change **mlops** to **Customer_Name_NoSpace**, then run the cell. **Note:** This will take several minutes to populate the database.
 
 <p align="center">
-<img src = images/notebook_qdrant_nissan.png width="800">
+<img src = images/notebook_qdrant.png width="800">
 </p>
 
 ### Lab 2.2 - Configure Model
@@ -227,7 +232,7 @@ Lastly we can configure our pipeline with the model, tokenizer and Qdrant. Run t
 </p>
 
 ### Lab 2.2 - Test Model
-We can now test our model! Run the following cell and ask a question of your documents. For the Nissan use case this would be questions about the Nissan Ariya. For example: *"how do I change the battery in the key fob?"*
+We can now test our model! Run the following cell and ask a question of your documents. For the Customer_Name use case this would be questions about the Document-Topic. For example: *"Example_Question"*
 
 <p align="center">
 <img src = images/question_test.png width="800">
@@ -251,7 +256,7 @@ First we need to open the **model.py** file on the left hand panel. Review this 
 <img src = images/generate.png width="800">
 </p>
 
-In order to make this work with our Nissan documents we simply need to change the name of the Qdrant collection that the code is looking for on line 69. Here change **mlops** to **nissan**:
+In order to make this work with our Use_Case documents we simply need to change the name of the Qdrant collection that the code is looking for on line 69. Here change **mlops** to **Customer_Name_NoSpace**:
 
 <p align="center">
 <img src = images/model_api_collection.png width="800">
@@ -313,7 +318,7 @@ Domino will now wrap your function in an API wrapper, package up the code and co
 # Section 4: Application Setup and Deployment
 
 ### Lab 4.1 - Reopen Workspace
-To tailor the app to the Nissan Ariya use case we need to re-open our Workspace. But this time we won't need a GPU as we are doing simple development. 
+To tailor the app to the Use_Case use case we need to re-open our Workspace. But this time we won't need a GPU as we are doing simple development. 
 
 Navigate back to your project by clicking **Projects** and then your project name:
 
@@ -336,15 +341,15 @@ Change the Hardware Tier to **Small** as we won't much compute to just edit code
 Wait for the Workspace to restart again and then open "API_streamlit_app.py".
 
 We have three things in this app we want to change:
-1. Add a header image for the Nissan Ariya
-2. Add a Nissan logo to the chat interface
+1. Add a header image for the app
+2. Add a Customer_Name logo to the chat interface
 3. Connect our app to the Model API we deployed
 
 ### Lab 4.2 - Add Header Image
 To add a header image replace the image on line 41 with the following:
 
 ```
-https://poctemppublic.s3.us-west-2.amazonaws.com/n_car.png
+header image url here
 ```
 
 <p align="center">
@@ -355,7 +360,7 @@ https://poctemppublic.s3.us-west-2.amazonaws.com/n_car.png
 Similarly replace the image on line 90 with the following:
 
 ```
-https://poctemppublic.s3.us-west-2.amazonaws.com/n_logo.png
+logo image url here
 ```
 
 <p align="center">
@@ -377,7 +382,7 @@ We can quickly test our model API using the following JSON in the **Request** wi
 ```json
 {
   "data": {
-    "input_text": "how do I change the battery in the key fob?",
+    "input_text": "Example_Question",
     "max_new_tokens": 200
   }
 }
@@ -418,7 +423,7 @@ Now we can deploy our app! Domino makes this easy to, we can simply point Domino
 <img src = images/app_sh.png width="800">
 </p>
 
-Next give the app a name incorporating your initials again, e.g. **Nissan Ariya QA ABC**:
+Next give the app a name incorporating your initials again, e.g. **Document QA ABC**:
 
 <p align="center">
 <img src = images/app_publish.png width="800">
@@ -436,11 +441,7 @@ Now we have our working application!
 <img src = images/working_app.png width="800">
 </p>
 
-You can now ask questions about the Nissan Ariya. Note the model will take a few seconds to respond:
-
-<p align="center">
-<img src = images/app_answer.png width="800">
-</p>
+You can now ask questions about regarding Use_Case. Note the model will take a few seconds to respond!
 
 If you want to you can also change the number of output characters (tokens) that the model returns, this can be helpful if the model is returning longer bodies of text from your documents. click on the arrow on the left of the app and update the Number of Output Tokens:
 
@@ -452,7 +453,7 @@ We have now completed the workshop hands on.
 
 
 # Summary
-In this workshop you have taken a Domino AI Hub Project Template and tailored it to be a Q+A bot for the Nissan Ariya user manuals. You have used Domino to:
+In this workshop you have taken a Domino AI Hub Project Template and tailored it to be a Q+A bot for the Use_Case. You have used Domino to:
 * Leverage GPUs
 * Connect to your S3 data
 * Vectorise it and store it in Qdrant
