@@ -79,7 +79,7 @@ Set *com.cerebro.domino.workbench.project.projectTemplateHubRaw* to the followin
         "dependencies":[
             {
                "templateName":"Open RAG Workshop",
-               "created":"2024-04-16T21:30:25.00Z",
+               "created":"2024-04-29T21:30:25.00Z",
                "kind":"Environment"
             }
          ],
@@ -93,7 +93,7 @@ Set *com.cerebro.domino.workbench.project.projectTemplateHubRaw* to the followin
 
 ## Compute Environment (updated for 5.10)
 Templates in 5.10 can have an environment as a dependency, they are linked by *templateName* and *created* in case you want to switch it out.
-Set *com.cerebro.domino.workbench.project.UnreleasedEnvironmentTemplate* to the following:
+Set *com.cerebro.domino.workbench.project.environmentTemplatesRaw* to the following:
 ```json
 [
     {
@@ -101,7 +101,7 @@ Set *com.cerebro.domino.workbench.project.UnreleasedEnvironmentTemplate* to the 
         "description": "Workshop for running the Llama2 RAG workshop",
         "environmentBaseImage": "quay.io/domino/pre-release-environments:project-hub-gpu.main.latest",
         "dockerfile": "RUN pip install qdrant_client streamlit_chat pypdf\nRUN pip install --upgrade ipywidgets",
-    "created": "2024-04-16T21:30:25.00Z",
+    "created": "2024-04-29T21:30:25.00Z",
         "workspaceTools": "jupyterlab:\n  title: \"JupyterLab\"\n  iconUrl: \"/assets/images/workspace-logos/jupyterlab.svg\"\n  start: [ \"/opt/domino/workspaces/jupyterlab/start\" ]\n  httpProxy:\n    internalPath: \"/{{ownerUsername}}/{{projectName}}/{{sessionPathComponent}}/{{runId}}/{{#if pathToOpen}}tree/{{pathToOpen}}{{/if}}\"\n    port: 8888\n    rewrite: false\n    requireSubdomain: false"
     }
 ]
