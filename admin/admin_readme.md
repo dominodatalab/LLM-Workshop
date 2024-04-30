@@ -111,7 +111,8 @@ Set *com.cerebro.domino.workbench.project.environmentTemplatesRaw* to the follow
 in the readme file change the following values:
 - Line 17 - add Domino URL
 - Change the image on line 441, working_app.png, to a screenshot of the application
-- Change line 352 and the image on 356 to reflect the 
+- Change line 352 and the image on 356 to reflect the header image you have chosen
+- Change line 363 and the image on 367 to reflect the logo image you have chosen
 
 Find-Replace the following:
 - **Customer_Name** - e.g. *Acme Insurance*
