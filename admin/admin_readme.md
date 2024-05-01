@@ -18,9 +18,9 @@ Get added as an official template?
 
 ### Domino Central Configuration for 5.10
 Create/Modify/Verify the following Central Config Entries:
-- Set `com.cerebro.domino.workbench.project.defaultVolumeSizeGiB` to **`20`**
-- Ensure `com.cerebro.domino.workbench.project.projectTemplateHubEnabled` is set to **`true`**
-- Set `com.cerebro.domino.workbench.project.projectTemplateHubRaw` to the following.
+- [ ] Set `com.cerebro.domino.workbench.project.defaultVolumeSizeGiB` to **`20`**
+- [ ] Ensure `com.cerebro.domino.workbench.project.projectTemplateHubEnabled` is set to **`true`**
+- [ ] Set `com.cerebro.domino.workbench.project.projectTemplateHubRaw` to the following.
   - Note: change the date if you want it to appear at the top of the list.
 
 ```json
@@ -94,7 +94,7 @@ Create/Modify/Verify the following Central Config Entries:
 
 ## Compute Environment (updated for 5.10)
 Templates in 5.10 can have an environment as a dependency, they are linked by *templateName* and *created* in case you want to switch it out.
-Set *com.cerebro.domino.workbench.project.environmentTemplatesRaw* to the following:
+- [ ] Set *com.cerebro.domino.workbench.project.environmentTemplatesRaw* to the following:
 ```json
 [
     {
