@@ -5,9 +5,6 @@
 You need to go through the Plaform Configuration steps below and update your fork of the main readme.
 **YOU SHOULD NOT NEED TO CHANGE ANY CODE IN THE TEMPLATE**
 
-## TODO:
-Get added as an official template?
-
 ## Domino Platform Configuration
 
 ### Prereqs
@@ -129,3 +126,7 @@ Do a "Find & Replace for the following values with values appropriate for your w
 - [ ] **Customer_Name_NoSpace** - e.g. *acme_insurance*
 - [ ] **Use_Case** - a short form title of the use case e.g. *Car Policy*
 - [ ] **Example_Question** - e.g. *What is my excess?*
+
+## TODO:
+Get added as an official template?
+
