@@ -20,7 +20,8 @@ Get added as an official template?
 Create/Modify/Verify the following Central Config Entries:
 - Set `com.cerebro.domino.workbench.project.defaultVolumeSizeGiB` to **`20`**
 - Ensure `com.cerebro.domino.workbench.project.projectTemplateHubEnabled` is set to **`true`**
-- Set `com.cerebro.domino.workbench.project.projectTemplateHubRaw` to the following. Note: change the date if you want it to appear at the top of the list.
+- Set `com.cerebro.domino.workbench.project.projectTemplateHubRaw` to the following.
+  - Note: change the date if you want it to appear at the top of the list.
 
 ```json
 [
