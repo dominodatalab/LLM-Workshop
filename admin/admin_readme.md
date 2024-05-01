@@ -11,10 +11,15 @@ Get added as an official template?
 ## Domino Platform Configuration
 
 ### Prereqs
-- You will need some customer / use case specific documents (saved as PDFs)
-- Create an S3 bucket upload those documents to it
-- Add the S3 bucket to your Domino as a Data Source called: **ddl-rag-workshop** (Create data source using a service account and make it readable by everyone)
-- You need to find a banner for your app and optionally a customer logo image for the chat symbol - make sure these are somewhere publically accessable, either directly from the customer website or in the poctemppublic s3 bucket in us-west-2 in Internal Eval AWS that is publically accessable.
+- [ ] **Create a Branch or Fork of this Repository**
+  - You will use the newly created fork/branch going forward. 
+- [ ] Create a new Domino Environment in FleetCommand
+- [ ] Collect some customer/use case specific documents (saved as PDFs).
+  - These will be used to pupulate the RAG and provide context.
+- [ ] Create an S3 bucket upload documents to it.
+- [ ] Add the S3 bucket to your Domino as a Data Source called: **ddl-rag-workshop**
+  - Create data source using a service account and make it readable by everyone
+- [ ]You need to find a banner for your app and optionally a customer logo image for the chat symbol - make sure these are somewhere publically accessable, either directly from the customer website or in the poctemppublic s3 bucket in us-west-2 in Internal Eval AWS that is publically accessable.
 
 ### Domino Central Configuration for 5.10
 Create/Modify/Verify the following Central Config Entries:
@@ -94,7 +99,7 @@ Create/Modify/Verify the following Central Config Entries:
 
 ## Compute Environment (updated for 5.10)
 Templates in 5.10 can have an environment as a dependency, they are linked by *templateName* and *created* in case you want to switch it out.
-- [ ] Set *com.cerebro.domino.workbench.project.environmentTemplatesRaw* to the following:
+- [ ] Set `com.cerebro.domino.workbench.project.environmentTemplatesRaw` to the following:
 ```json
 [
     {
