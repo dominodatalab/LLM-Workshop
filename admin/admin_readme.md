@@ -19,7 +19,8 @@ Get added as an official template?
 - [ ] Create an S3 bucket upload documents to it.
 - [ ] Add the S3 bucket to your Domino as a Data Source called: **ddl-rag-workshop**
   - Create data source using a service account and make it readable by everyone
-- [ ] Find a banner customer logo image for the chat symbol for your app.  Make sure these are somewhere publically accessable, either directly from the customer website or in the poctemppublic s3 bucket in us-west-2 in Internal Eval AWS that is publically accessable.
+- [ ] Find a banner customer logo image for the chat symbol for your app.
+  - Make sure these are somewhere publically accessable, either directly from the customer website or in the poctemppublic s3 bucket in us-west-2 in Internal Eval AWS that is publically accessable.
 
 ### Domino Central Configuration for 5.10
 Create/Modify/Verify the following Central Config Entries:
@@ -116,11 +117,12 @@ Templates in 5.10 can have an environment as a dependency, they are linked by *t
 ## Readme Changes
 In your recently created Branch or Fork, in the top-level `README.md` file, make the following value changes:
 - [ ] Line 17 - add Domino URL
-- [ ] Line 441 - Change the working_app.png, to a screenshot of the application.
+- [ ] Line 441 - Change the file `working_app.png`, to a screenshot of the application.
 - [ ] Line 352 - Change the image to reflect the header image you have chosen.
 - [ ] Line 356 - Change the image to reflect the header image you have chosen.
 - [ ] Line 363 - Change the image to reflect the logo image you have chosen.
 - [ ] Line 367 - Change the image to reflect the logo image you have chosen.
+- [ ] Line 441 - Change the file `working_app.png`, to a screenshot of the application.
 
 Do a "Find & Replace for the following values with values appropriate for your workshop:
 - [ ] **Customer_Name** - e.g. *Acme Insurance*
