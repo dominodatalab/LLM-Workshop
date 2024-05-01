@@ -14,7 +14,7 @@ Get added as an official template?
 - You will need some customer / use case specific documents (saved as PDFs)
 - Create an S3 bucket upload those documents to it
 - Add the S3 bucket to your Domino as a Data Source called: **ddl-rag-workshop** (Create data source using a service account and make it readable by everyone)
-- You need to find a banner for your app and optionally a customer logo image for the chat symbol - make sure these are somewhere publically accessable, either directly from the customer website or in the poctemppublic s3 bucket in us-west-2 in Internal Eval AWS.
+- You need to find a banner for your app and optionally a customer logo image for the chat symbol - make sure these are somewhere publically accessable, either directly from the customer website or in the poctemppublic s3 bucket in us-west-2 in Internal Eval AWS that is publically accessable.
 
 ### Domino Central Configuration for 5.10
 Create/Modify/Verify the following Central Config Entries:
