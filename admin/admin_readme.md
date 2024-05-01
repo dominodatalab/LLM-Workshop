@@ -17,10 +17,10 @@ Get added as an official template?
 - You need to find a banner for your app and optionally a customer logo image for the chat symbol - make sure these are somewhere publically accessable, either directly from the customer website or in the poctemppublic s3 bucket in us-west-2 in Internal Eval AWS.
 
 ### Domino Central Configuration for 5.10
-
-Set *com.cerebro.domino.workbench.project.defaultVolumeSizeGiB* to **20**
-Ensure *com.cerebro.domino.workbench.project.projectTemplateHubEnabled* is set to **true**
-Set *com.cerebro.domino.workbench.project.projectTemplateHubRaw* to the following. Note: change the date if you want it to appear at the top of the list.
+Create/Modify/Verify the following Central Config Entries:
+- Set 'com.cerebro.domino.workbench.project.defaultVolumeSizeGiB' to '**20**'
+- Ensure 'com.cerebro.domino.workbench.project.projectTemplateHubEnabled` is set to '**true**'
+- Set 'com.cerebro.domino.workbench.project.projectTemplateHubRaw' to the following. Note: change the date if you want it to appear at the top of the list.
 
 ```json
 [
