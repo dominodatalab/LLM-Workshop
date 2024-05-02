@@ -97,7 +97,7 @@ Create/Modify/Verify the following Central Config Entries:
 
 ## Compute Environment (updated for 5.10)
 Templates in 5.10 can have an environment as a dependency, they are linked by *templateName* and *created* in case you want to switch it out.
-- [ ] Set `com.cerebro.domino.workbench.project.environmentTemplatesRaw` to the following:
+- [x] Set `com.cerebro.domino.workbench.project.environmentTemplatesRaw` to the following:
 ```json
 [
     {
