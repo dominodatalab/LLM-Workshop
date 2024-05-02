@@ -8,22 +8,22 @@ You need to go through the Plaform Configuration steps below and update your for
 ## Domino Platform Configuration
 
 ### Prereqs
-- [ ] **Create a Branch or Fork of this Repository**
+- [x] **Create a Branch or Fork of this Repository**
   - You will use the newly created fork/branch going forward. 
-- [ ] Create a new Domino Environment in FleetCommand
-- [ ] Collect some customer/use case specific documents (saved as PDFs).
+- [x] Create a new Domino Environment in FleetCommand
+- [x] Collect some customer/use case specific documents (saved as PDFs).
   - These will be used to pupulate the RAG and provide context.
-- [ ] Create an S3 bucket upload documents to it.
-- [ ] Add the S3 bucket to your Domino as a Data Source called: **ddl-rag-workshop**
+- [x] Create an S3 bucket upload documents to it.
+- [x] Add the S3 bucket to your Domino as a Data Source called: **ddl-rag-workshop**
   - Create data source using a service account and make it readable by everyone
-- [ ] Find a banner customer logo image for the chat symbol for your app.
+- [x] Find a banner customer logo image for the chat symbol for your app.
   - Make sure these are somewhere publically accessable, either directly from the customer website or in the poctemppublic s3 bucket in us-west-2 in Internal Eval AWS that is publically accessable.
 
 ### Domino Central Configuration for 5.10
 Create/Modify/Verify the following Central Config Entries:
-- [ ] Set `com.cerebro.domino.workbench.project.defaultVolumeSizeGiB` to **`20`**
-- [ ] Ensure `com.cerebro.domino.workbench.project.projectTemplateHubEnabled` is set to **`true`**
-- [ ] Set `com.cerebro.domino.workbench.project.projectTemplateHubRaw` to the following.
+- [x] Set `com.cerebro.domino.workbench.project.defaultVolumeSizeGiB` to **`20`**
+- [x] Ensure `com.cerebro.domino.workbench.project.projectTemplateHubEnabled` is set to **`true`**
+- [x] Set `com.cerebro.domino.workbench.project.projectTemplateHubRaw` to the following.
   - Note: change the date if you want it to appear at the top of the list.
 
 ```json
