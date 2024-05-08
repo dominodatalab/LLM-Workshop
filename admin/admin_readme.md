@@ -10,14 +10,16 @@ You need to go through the Plaform Configuration steps below and update your for
 ### Prereqs
 - [ ] **Create a Branch or Fork of this Repository**
   - You will use the newly created fork/branch going forward. 
-- [ ] Create a new Domino Environment in FleetCommand
+- [ ] Create a new Domino Environment in FleetCommand.
+- [ ] Create a new GPU API hardware tier (clone the GPU Small one and set it to be an API tier).
+- [ ] Disable the large GPU tier - it doesn't always start up for some as yet unknown reason.
 - [ ] Collect some customer/use case specific documents (saved as PDFs).
   - These will be used to pupulate the RAG and provide context.
-- [ ] Create an S3 bucket upload documents to it.
+- [ ] Create an S3 bucket, upload documents to it and create a user/key in AWS that can access only this bucket.
 - [ ] Add the S3 bucket to your Domino as a Data Source called: **ddl-rag-workshop**
   - Create data source using a service account and make it readable by everyone
 - [ ] Find a banner customer logo image for the chat symbol for your app.
-  - Make sure these are somewhere publically accessable, either directly from the customer website or in the poctemppublic s3 bucket in us-west-2 in Internal Eval AWS that is publically accessable.
+  - Make sure these are somewhere publically accessable, either directly from the customer website or in the poctemppublic s3 bucket in us-west-2 in Internal Eval AWS that is set to be publically accessable.
 
 ### Domino Central Configuration for 5.10
 Create/Modify/Verify the following Central Config Entries:
