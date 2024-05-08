@@ -20,6 +20,8 @@ You need to go through the Plaform Configuration steps below and update your for
   - Create data source using a service account and make it readable by everyone
 - [ ] Find a banner customer logo image for the chat symbol for your app.
   - Make sure these are somewhere publically accessable, either directly from the customer website or in the poctemppublic s3 bucket in us-west-2 in Internal Eval AWS that is set to be publically accessable.
+- [ ] make a copy of [this presentation](https://docs.google.com/presentation/d/1DnDZ6xE7suPLLvFeL6vrZp0eDV5OEG4yFprLkalMUYg/edit#slide=id.p) and tailor for your needs. Needs updating to the latest colour scheme.     
+
 
 ### Domino Central Configuration for 5.10
 Create/Modify/Verify the following Central Config Entries:
